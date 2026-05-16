@@ -130,7 +130,7 @@ const Header = () => {
             <Link to="/about" className="py-2 border-b border-gray-100 uppercase" onClick={() => setIsMenuOpen(false)}>About Us</Link>
             <Link to="/contact" className="py-2 border-b border-gray-100 uppercase" onClick={() => setIsMenuOpen(false)}>Contact</Link>
             <div className="pt-4 flex flex-col gap-2 text-sm text-gray-600">
-              <span className="flex items-center gap-2"><PhoneIcon size={16} className="text-primary"/> 8272038697 / 7983386937</span>
+              <span className="flex items-center gap-2"><PhoneIcon size={16} className="text-primary"/> +91 79833 86937</span>
               <span className="flex items-center gap-2"><MailIcon size={16} className="text-primary"/> info@lotuspackersandmovers.com</span>
             </div>
           </nav>
