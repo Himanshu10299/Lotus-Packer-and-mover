@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Lotus Packers <span className="text-primary">and Decker</span></h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Lotus Packers <span className="text-primary">and Movers</span></h3>
             <p className="mb-4">
               Providing reliable, safe, and swift packing and moving services across all cities in India. Your trusted partner in relocation.
             </p>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-700 py-4 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} Lotus Packers and Decker. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Lotus Packers and Movers. All rights reserved.</p>
       </div>
     </footer>
   );

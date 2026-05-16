@@ -144,10 +144,10 @@ const Home = () => {
             </div>
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Why Choose <span className="text-primary">Lotus Packers</span> and Decker?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Why Choose <span className="text-primary">Lotus Packers</span> and Movers?</h2>
             <div className="w-24 h-1 bg-primary mb-6"></div>
             <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-              With over a decade of experience in the logistics and transportation sector, Lotus Packers and Decker has established itself as one of the most trusted moving companies. We have a monumental presence and provide moving services <strong>all over India.</strong>
+              With over a decade of experience in the logistics and transportation sector, Lotus Packers and Movers has established itself as one of the most trusted moving companies. We have a monumental presence and provide moving services <strong>all over India.</strong>
             </p>
             <ul className="space-y-4 text-gray-700 mb-8 border-l-4 border-accent pl-4">
               <li className="flex items-center gap-3">
@@ -163,6 +163,116 @@ const Home = () => {
             <Link to="/about" className="inline-block border-2 border-secondary text-secondary font-bold px-8 py-3 hover:bg-secondary hover:text-white transition rounded">
               Know More About Us
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Shifting Process Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Our Shifting Process</h2>
+            <div className="w-24 h-1 bg-primary mx-auto mb-4"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              A simple, transparent, and hassle-free relocation process designed to give you complete peace of mind.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 position-relative">
+            <div className="text-center relative">
+              <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-accent relative z-10">
+                <span className="text-2xl font-bold text-primary">1</span>
+              </div>
+              <h3 className="text-xl font-bold text-secondary mb-2">Share Details</h3>
+              <p className="text-gray-600 text-sm">Tell us when and where you want to move.</p>
+            </div>
+            
+            <div className="text-center relative">
+              <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-accent relative z-10">
+                <span className="text-2xl font-bold text-primary">2</span>
+              </div>
+              <h3 className="text-xl font-bold text-secondary mb-2">Get Estimate</h3>
+              <p className="text-gray-600 text-sm">Receive a transparent and competitive quotation.</p>
+            </div>
+
+            <div className="text-center relative">
+              <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-accent relative z-10">
+                <span className="text-2xl font-bold text-primary">3</span>
+              </div>
+              <h3 className="text-xl font-bold text-secondary mb-2">Pack & Load</h3>
+              <p className="text-gray-600 text-sm">Our experts securely pack and load your belongings.</p>
+            </div>
+
+            <div className="text-center relative">
+              <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-accent relative z-10">
+                <span className="text-2xl font-bold text-primary">4</span>
+              </div>
+              <h3 className="text-xl font-bold text-secondary mb-2">Safe Delivery</h3>
+              <p className="text-gray-600 text-sm">Timely delivery and unloading at your new location.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Request an Estimate Now Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="bg-secondary rounded-2xl p-8 md:p-12 shadow-2xl flex flex-col lg:flex-row items-center gap-10">
+            <div className="lg:w-1/2 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Request an Estimate Now</h2>
+              <div className="w-20 h-1 bg-primary mb-6"></div>
+              <p className="text-gray-300 text-lg mb-8">
+                Planning a move? Get a free, no-obligation quote today. Fill out the quick form and our relocation experts will contact you with the best customized pricing.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="text-primary text-xl" size={20} />
+                  <span>No Hidden Charges</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="text-primary text-xl" size={20} />
+                  <span>Instant Response</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="text-primary text-xl" size={20} />
+                  <span>Customized Solutions</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="lg:w-1/2 w-full">
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <form className="space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                      <input type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" placeholder="John Doe" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                      <input type="tel" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" placeholder="+91 XXXXX XXXXX" />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Moving From</label>
+                      <input type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" placeholder="Current Location" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-1">Moving To</label>
+                      <input type="text" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" placeholder="Destination" />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Requirement Details</label>
+                    <textarea className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50 h-24 resize-none" placeholder="E.g., 2 BHK Shifting on next Monday..."></textarea>
+                  </div>
+                  <button type="button" className="w-full bg-primary text-white font-bold py-3.5 rounded hover:bg-red-700 transition shadow-md text-lg uppercase tracking-wide">
+                    Get Free Estimate
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
