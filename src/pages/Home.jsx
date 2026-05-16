@@ -191,12 +191,19 @@ const Home = () => {
       {/* About Section - Updated to full width truck image */}
       <section id="about" className="bg-white pb-20">
         <div
-          className="w-full h-[300px] md:h-[400px] overflow-hidden bg-center bg-cover bg-no-repeat mb-12 shadow-inner"
+          className="w-full h-[300px] md:h-[400px] overflow-hidden bg-center bg-cover bg-no-repeat mb-12 shadow-inner relative flex items-center justify-center text-center"
           style={{
-            backgroundImage: `url(${transportTruckImage})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${transportTruckImage})`,
             backgroundAttachment: "fixed",
           }}
-        />
+        >
+          <div className="container mx-auto px-4 relative z-10">
+            <h2 className="text-white text-2xl md:text-5xl font-extrabold uppercase tracking-widest drop-shadow-2xl">
+              Reliable Shifting Solutions for Your Peace of Mind
+            </h2>
+            <div className="w-20 h-1 bg-primary mx-auto mt-4"></div>
+          </div>
+        </div>
 
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center md:text-left">
