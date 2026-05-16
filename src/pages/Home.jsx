@@ -1,6 +1,7 @@
 import { Truck, Package, ShieldCheck, Clock, MapPin, Star, Award, CheckCircle, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import deliveryPersonImage from '../assets/delivery-person.png';
+import transportTruckImage from '../assets/transport-truck.png';
 
 const Home = () => {
   return (
@@ -187,29 +188,24 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-white">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                alt="Warehouse and Logistics" 
-                className="rounded-lg shadow-xl"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-accent text-secondary p-6 rounded-lg shadow-xl hidden md:block">
-                <p className="text-3xl font-bold">100%</p>
-                <p className="font-semibold uppercase tracking-wide">Client Satisfaction</p>
-              </div>
-            </div>
-          </div>
-          <div className="md:w-1/2">
+      {/* About Section - Updated to full width truck image */}
+      <section id="about" className="bg-white pb-20">
+        <div
+          className="w-full h-[300px] md:h-[400px] overflow-hidden bg-center bg-cover bg-no-repeat mb-12 shadow-inner"
+          style={{
+            backgroundImage: `url(${transportTruckImage})`,
+            backgroundAttachment: "fixed",
+          }}
+        />
+
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Why Choose <span className="text-primary">Lotus Packers</span> and Movers?</h2>
-            <div className="w-24 h-1 bg-primary mb-6"></div>
+            <div className="w-24 h-1 bg-primary mb-6 mx-auto md:mx-0"></div>
             <p className="text-gray-600 mb-6 leading-relaxed text-lg">
               With over a decade of experience in the logistics and transportation sector, Lotus Packers and Movers has established itself as one of the most trusted moving companies. We have a monumental presence and provide moving services <strong>all over India.</strong>
             </p>
-            <ul className="space-y-4 text-gray-700 mb-8 border-l-4 border-accent pl-4">
+            <ul className="space-y-4 text-gray-700 mb-8 border-l-4 border-accent pl-4 text-left">
               <li className="flex items-center gap-3">
                 <CheckCircle className="text-primary flex-shrink-0" size={24} /> <span className="font-semibold text-lg">Pan India Moving Network (Every single state covered)</span>
               </li>
