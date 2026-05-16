@@ -1,6 +1,7 @@
 import { Phone as PhoneIcon, Mail as MailIcon, MapPin as MapPinIcon, Menu as MenuIcon, X as XIcon, ChevronDown as ChevronDownIcon } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logoImage from '../assets/packers and mover logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,12 +39,8 @@ const Header = () => {
       {/* Main navigation */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-primary flex items-center gap-2">
-            <span className="bg-primary text-white p-2 rounded-lg">LPD</span>
-            <div>
-              <div className="leading-tight">Lotus Packers</div>
-              <div className="text-sm font-normal text-gray-500">and Movers</div>
-            </div>
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logoImage} alt="Lotus Packers and Movers" className="h-14 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav */}

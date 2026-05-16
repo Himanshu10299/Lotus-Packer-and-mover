@@ -1,5 +1,6 @@
 import { Truck, Package, ShieldCheck, Clock, MapPin, Star, Award, CheckCircle, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import deliveryPersonImage from '../assets/delivery-person.png';
 
 const Home = () => {
   return (
@@ -47,12 +48,13 @@ const Home = () => {
       <section className="bg-[#f4f7fe] py-20 relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-10 flex flex-col md:flex-row items-center gap-10 relative z-10">
           <div className="md:w-1/2 relative flex justify-center">
-            {/* Courier/Delivery person image */}
-            <img 
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-              alt="Delivery Expert" 
-              className="w-full max-w-sm lg:max-w-md object-contain rounded-lg drop-shadow-2xl relative z-10" 
+            <img
+              src={deliveryPersonImage}
+              alt="Delivery expert with packages"
+              className="w-full max-w-sm lg:max-w-md object-contain relative z-10 drop-shadow-2xl"
             />
+            {/* Decorative background shape */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-50 -z-0"></div>
           </div>
           <div className="md:w-1/2">
             <h3 className="text-[#4295D1] font-bold text-xl mb-2">About Us</h3>
@@ -100,7 +102,7 @@ const Home = () => {
             {/* Service Cards Updated */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1775&q=80" alt="Home Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1775&q=80" alt="Home Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Home Shifting</h3>
               </div>
@@ -114,7 +116,7 @@ const Home = () => {
             
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1542621323-23e200218824?ixlib=rb-4.0.3&auto=format&fit=crop&w=1776&q=80" alt="Office Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1770&q=80" alt="Office Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Office Shifting</h3>
               </div>
@@ -128,7 +130,7 @@ const Home = () => {
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Car Transportation" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1770&q=80" alt="Car Transportation" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Car Transportation</h3>
               </div>
@@ -142,7 +144,7 @@ const Home = () => {
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1622353381534-7a09fb2a4e23?ixlib=rb-4.0.3&auto=format&fit=crop&w=1774&q=80" alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1770&q=80" alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Packing & Unpacking</h3>
               </div>
@@ -156,7 +158,7 @@ const Home = () => {
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=1772&q=80" alt="Courier Cargo" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1772&q=80" alt="Courier Cargo" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Courier & Cargo</h3>
               </div>
@@ -170,7 +172,7 @@ const Home = () => {
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Goods Insurance" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1770&q=80" alt="Goods Insurance" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Goods Insurance</h3>
               </div>
