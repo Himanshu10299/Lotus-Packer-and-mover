@@ -2,6 +2,7 @@ import { Truck, Package, ShieldCheck, Clock, MapPin, Star, Award, CheckCircle, P
 import { Link } from 'react-router-dom';
 import deliveryPersonImage from '../assets/delivery-person.png';
 import transportTruckImage from '../assets/transport-truck.png';
+import packingBoxesImage from '../assets/packing-boxes.png';
 
 const Home = () => {
   return (
@@ -145,7 +146,7 @@ const Home = () => {
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1770&q=80" alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                  <img src={packingBoxesImage} alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                  <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Packing & Unpacking</h3>
               </div>
@@ -351,8 +352,8 @@ const Home = () => {
             <p className="text-accent font-semibold text-xl">We move your goods from any place to your destination in India.</p>
           </div>
           <div className="flex gap-4">
-            <a href="tel:8272038697" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
-              <Phone size={20} /> 8272038697 / 7983386937
+            <a href="tel:7983386937" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
+              <Phone size={20} /> 7983386937 / 8272038697
             </a>
           </div>
         </div>

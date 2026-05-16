@@ -5,14 +5,14 @@ const FloatingContact = () => {
   return (
     <div className="fixed bottom-6 left-6 flex flex-col gap-4 z-50">
       <a 
-        href="tel:8272038697" 
+        href="tel:7983386937" 
         className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition transform hover:scale-110"
         title="Call Us"
       >
         <Phone size={28} />
       </a>
       <a 
-        href="https://wa.me/918272038697" 
+        href="https://wa.me/917983386937" 
         target="_blank" 
         rel="noopener noreferrer"
         className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition transform hover:scale-110"
