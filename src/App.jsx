@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Contact from './pages/Contact';
+import FloatingContact from './components/FloatingContact';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingContact />
       </div>
     </Router>
   );

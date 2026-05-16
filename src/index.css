@@ -1,1 +1,14 @@
-@tailwind base; @tailwind components; @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes hero-slide {
+  0%, 25% { transform: translateX(0); }
+  33%, 58% { transform: translateX(-100%); }
+  66%, 91% { transform: translateX(-200%); }
+  100% { transform: translateX(-300%); }
+}
+
+.animate-hero-slide {
+  animation: hero-slide 15s infinite;
+}

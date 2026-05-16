@@ -5,59 +5,22 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-secondary text-white py-24 object-cover overflow-hidden">
-        {/* Real background image replacing gradient */}
-        <div className="absolute inset-0">
-           <img 
-              src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-              alt="Packers and Movers" 
-              className="w-full h-full object-cover opacity-30"
-            />
-        </div>
-        <div className="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-10 md:mb-0">
-            <div className="inline-block bg-accent text-secondary font-bold px-4 py-1 rounded-full mb-4 text-sm tracking-wider uppercase">
-              #1 ALL OVER INDIA SHIFTING EXPERTS
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
-              Safe, Fast & Reliable <br />
-              <span className="text-primary text-5xl md:text-6xl">Packers and Movers</span>
-            </h1>
-            <p className="text-xl text-gray-200 mb-8 max-w-lg drop-shadow-md">
-              Expert relocation services for home, office, and vehicle transport. We deliver your goods with 100% safety <span className="font-bold text-white border-b-2 border-primary">EVERYWHERE IN INDIA.</span>
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact" className="bg-primary text-white px-8 py-3 rounded-md font-bold text-center hover:bg-red-700 transition shadow-lg text-lg">
-                Get a Free Quote
-              </Link>
-              <a href="tel:7983386937" className="bg-white text-secondary px-8 py-3 rounded-md font-bold text-center hover:bg-gray-100 transition shadow-lg text-lg border-2 border-transparent">
-                Call Us Now
-              </a>
-            </div>
+      <section className="relative h-[80vh] min-h-[500px] overflow-hidden flex items-center bg-gray-900">
+        {/* Full sliding background */}
+        <div className="absolute inset-0 z-0">
+          <div className="flex w-full h-full animate-hero-slide">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Slide 1" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Slide 2" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80" alt="Slide 3" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Slide 1 copy" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
           </div>
-          
-          <div className="md:w-1/2 md:pl-10 w-full" id="quote">
-            <div className="bg-white p-8 rounded-lg shadow-2xl text-gray-800 border-t-4 border-primary">
-              <h3 className="text-2xl font-bold mb-2 text-center text-secondary">Request a Call Back</h3>
-              <p className="text-center text-gray-500 mb-6 text-sm">Fill details below and we will contact you immediately.</p>
-              <form className="space-y-4">
-                <div>
-                  <input type="text" placeholder="Your Name" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" />
-                </div>
-                <div>
-                  <input type="tel" placeholder="Mobile Number" className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" />
-                </div>
-                <div className="flex gap-4">
-                  <input type="text" placeholder="Moving From (e.g. Delhi)" className="w-1/2 px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" />
-                  <input type="text" placeholder="Moving To (e.g. Mumbai)" className="w-1/2 px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary bg-gray-50" />
-                </div>
-                <div>
-                  <button type="button" className="w-full bg-accent text-secondary font-bold py-3 rounded hover:bg-yellow-500 transition text-lg uppercase tracking-wide shadow-md">
-                    Submit Request
-                  </button>
-                </div>
-              </form>
-            </div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-10 relative z-10">
+          <div className="max-w-2xl bg-black/40 p-8 sm:p-12 border-l-4 border-t-4 border-b-4 border-white inline-block">
+            <h2 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-white mb-2">Welcome To</h2>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">Lotus Packers and Movers</h1>
+            <p className="text-lg md:text-xl text-white">Trusted packers and movers for seamless relocation</p>
           </div>
         </div>
       </section>
@@ -80,48 +43,143 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Us Section (New) */}
+      <section className="bg-[#f4f7fe] py-20 relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-10 flex flex-col md:flex-row items-center gap-10 relative z-10">
+          <div className="md:w-1/2 relative flex justify-center">
+            {/* Courier/Delivery person image */}
+            <img 
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+              alt="Delivery Expert" 
+              className="w-full max-w-sm lg:max-w-md object-contain rounded-lg drop-shadow-2xl relative z-10" 
+            />
+          </div>
+          <div className="md:w-1/2">
+            <h3 className="text-[#4295D1] font-bold text-xl mb-2">About Us</h3>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 leading-tight">
+              Lotus Packers And Movers
+            </h2>
+            <p className="text-gray-600 mb-4 leading-relaxed text-sm lg:text-base">
+              At <strong>Lotus Packers and Movers</strong>, we specialize in providing efficient, safe, and reliable relocation services. With a dedicated team and modern equipment, we ensure your belongings are handled with care and delivered on time. Whether it's household, office, or industrial shifting, our goal is to make your move seamless, stress-free, and affordable.
+            </p>
+            <p className="text-gray-600 mb-8 leading-relaxed text-sm lg:text-base">
+              <strong>Lotus Packers and Movers</strong> is your trusted partner for smooth and secure relocation. We offer professional packing, loading, transportation, and unpacking services designed to make every move simple and worry-free. Our experienced team ensures timely delivery and complete customer satisfaction, whether it's a local or long-distance move.
+            </p>
+            
+            <Link to="/about" className="bg-[#4295D1] hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-md inline-block mb-10 transition shadow-md">
+              Read More
+            </Link>
+
+            <div className="flex flex-col sm:flex-row gap-6 bg-white p-6 rounded-2xl shadow-sm items-center max-w-xl">
+              <div className="flex items-center gap-3">
+                <Truck className="text-[#4295D1] bg-blue-50 p-2 rounded-full" size={48} />
+                <span className="font-bold text-gray-800 text-lg">Affordable Cost</span>
+              </div>
+              <div className="hidden sm:block w-px h-12 bg-gray-200"></div>
+              <div className="flex items-center gap-3">
+                <Clock className="text-[#4295D1] bg-blue-50 p-2 rounded-full" size={48} />
+                <span className="font-bold text-gray-800 text-lg">Short Time Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Our Premium Services</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4"></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Our Services</h2>
+            <div className="w-24 h-1 bg-[#4295D1] mx-auto mb-4"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
               We offer comprehensive shifting solutions tailored to meet your specific requirements.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center group">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-                <Truck className="text-primary group-hover:text-white transition-colors" size={32} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 lg:px-10">
+            {/* Service Cards Updated */}
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
+              <div className="h-56 overflow-hidden relative">
+                 <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1775&q=80" alt="Home Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Home Shifting</h3>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-secondary">Household Shifting</h3>
-              <p className="text-gray-600">Secure and timely relocation of your home essentials to any city in India.</p>
+              <div className="p-6 flex-grow flex flex-col justify-between bg-white">
+                <p className="text-gray-600 mb-6">Safe and hassle-free domestic relocation services designed for complete peace of mind.</p>
+                <Link to="/services/home-shifting" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16}/></span>
+                </Link>
+              </div>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center group">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-                <Package className="text-primary group-hover:text-white transition-colors" size={32} />
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
+              <div className="h-56 overflow-hidden relative">
+                 <img src="https://images.unsplash.com/photo-1542621323-23e200218824?ixlib=rb-4.0.3&auto=format&fit=crop&w=1776&q=80" alt="Office Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Office Shifting</h3>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-secondary">Office Relocation</h3>
-              <p className="text-gray-600">Minimal downtime office moving services with utmost care for your equipment.</p>
+              <div className="p-6 flex-grow flex flex-col justify-between bg-white">
+                <p className="text-gray-600 mb-6">Professional corporate moving ensuring zero downtime and complete data security.</p>
+                <Link to="/services/office-shifting" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Package size={16}/></span>
+                </Link>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center group">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-                <ShieldCheck className="text-primary group-hover:text-white transition-colors" size={32} />
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
+              <div className="h-56 overflow-hidden relative">
+                 <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Car Transportation" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Car Transportation</h3>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-secondary">Packing & Unpacking</h3>
-              <p className="text-gray-600">High-quality packaging materials to ensure the safety of your valuable belongings.</p>
+              <div className="p-6 flex-grow flex flex-col justify-between bg-white">
+                <p className="text-gray-600 mb-6">Door-to-door enclosed car carrier services to safely transport your vehicle anywhere.</p>
+                <Link to="/services/car-transportation" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16}/></span>
+                </Link>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center group">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
-                <Clock className="text-primary group-hover:text-white transition-colors" size={32} />
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
+              <div className="h-56 overflow-hidden relative">
+                 <img src="https://images.unsplash.com/photo-1622353381534-7a09fb2a4e23?ixlib=rb-4.0.3&auto=format&fit=crop&w=1774&q=80" alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Packing & Unpacking</h3>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-secondary">Local Shifting</h3>
-              <p className="text-gray-600">Fast and efficient local moving services within the city at affordable rates.</p>
+              <div className="p-6 flex-grow flex flex-col justify-between bg-white">
+                <p className="text-gray-600 mb-6">Premium multi-layer packing materials to ensure your fragile items stay protected.</p>
+                <Link to="/services/packing-unpacking" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Package size={16}/></span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
+              <div className="h-56 overflow-hidden relative">
+                 <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=1772&q=80" alt="Courier Cargo" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Courier & Cargo</h3>
+              </div>
+              <div className="p-6 flex-grow flex flex-col justify-between bg-white">
+                <p className="text-gray-600 mb-6">Fast, reliable, and secure cargo and courier delivery network nationwide.</p>
+                <Link to="/services/courier-cargo" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16}/></span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
+              <div className="h-56 overflow-hidden relative">
+                 <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80" alt="Goods Insurance" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Goods Insurance</h3>
+              </div>
+              <div className="p-6 flex-grow flex flex-col justify-between bg-white">
+                <p className="text-gray-600 mb-6">Comprehensive transit insurance policies to secure against any unforeseen damages.</p>
+                <Link to="/services/goods-insurance" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><ShieldCheck size={16}/></span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -288,8 +346,8 @@ const Home = () => {
             <p className="text-accent font-semibold text-xl">We move your goods from any place to your destination in India.</p>
           </div>
           <div className="flex gap-4">
-            <a href="tel:7983386937" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
-              <Phone size={20} /> 79833 86937
+            <a href="tel:8272038697" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
+              <Phone size={20} /> 8272038697 / 7983386937
             </a>
           </div>
         </div>
