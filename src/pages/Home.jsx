@@ -14,8 +14,10 @@ const Home = () => {
           <div className="flex w-full h-full animate-hero-slide">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Slide 1" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Slide 2" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
-            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80" alt="Slide 3" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Slide 1 copy" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
+            <img src={packingBoxesImage} alt="Slide 3" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
+            <img src={transportTruckImage} alt="Slide 1 copy" className="min-w-full h-full object-cover opacity-60 flex-shrink-0" />
+
           </div>
         </div>
 
@@ -32,16 +34,16 @@ const Home = () => {
       <section className="bg-primary text-white py-6">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-center gap-4">
           <div className="flex items-center gap-3 mx-auto">
-             <ShieldCheck size={32} />
-             <div className="text-left"><p className="font-bold text-lg">100% Safe</p><p className="text-xs opacity-80">Damage-free guarantee</p></div>
+            <ShieldCheck size={32} />
+            <div className="text-left"><p className="font-bold text-lg">100% Safe</p><p className="text-xs opacity-80">Damage-free guarantee</p></div>
           </div>
           <div className="flex items-center gap-3 mx-auto">
-             <MapPin size={32} />
-             <div className="text-left"><p className="font-bold text-lg">All Over India</p><p className="text-xs opacity-80">Extensive branch network</p></div>
+            <MapPin size={32} />
+            <div className="text-left"><p className="font-bold text-lg">All Over India</p><p className="text-xs opacity-80">Extensive branch network</p></div>
           </div>
           <div className="flex items-center gap-3 mx-auto">
-             <Award size={32} />
-             <div className="text-left"><p className="font-bold text-lg">Trusted Experts</p><p className="text-xs opacity-80">10+ Years Experience</p></div>
+            <Award size={32} />
+            <div className="text-left"><p className="font-bold text-lg">Trusted Experts</p><p className="text-xs opacity-80">10+ Years Experience</p></div>
           </div>
         </div>
       </section>
@@ -69,7 +71,7 @@ const Home = () => {
             <p className="text-gray-600 mb-8 leading-relaxed text-sm lg:text-base">
               <strong>Lotus Packers and Movers</strong> is your trusted partner for smooth and secure relocation. We offer professional packing, loading, transportation, and unpacking services designed to make every move simple and worry-free. Our experienced team ensures timely delivery and complete customer satisfaction, whether it's a local or long-distance move.
             </p>
-            
+
             <Link to="/about" className="bg-[#4295D1] hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-md inline-block mb-10 transition shadow-md">
               Read More
             </Link>
@@ -104,84 +106,84 @@ const Home = () => {
             {/* Service Cards Updated */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1775&q=80" alt="Home Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Home Shifting</h3>
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1775&q=80" alt="Home Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Home Shifting</h3>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between bg-white">
                 <p className="text-gray-600 mb-6">Safe and hassle-free domestic relocation services designed for complete peace of mind.</p>
                 <Link to="/services/home-shifting" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
-                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16}/></span>
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16} /></span>
                 </Link>
               </div>
             </div>
-            
+
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1770&q=80" alt="Office Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Office Shifting</h3>
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1770&q=80" alt="Office Shifting" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Office Shifting</h3>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between bg-white">
                 <p className="text-gray-600 mb-6">Professional corporate moving ensuring zero downtime and complete data security.</p>
                 <Link to="/services/office-shifting" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
-                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Package size={16}/></span>
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Package size={16} /></span>
                 </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1770&q=80" alt="Car Transportation" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Car Transportation</h3>
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1770&q=80" alt="Car Transportation" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Car Transportation</h3>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between bg-white">
                 <p className="text-gray-600 mb-6">Door-to-door enclosed car carrier services to safely transport your vehicle anywhere.</p>
                 <Link to="/services/car-transportation" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
-                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16}/></span>
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16} /></span>
                 </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                  <img src={packingBoxesImage} alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Packing & Unpacking</h3>
+                <img src={packingBoxesImage} alt="Packing and Unpacking" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Packing & Unpacking</h3>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between bg-white">
                 <p className="text-gray-600 mb-6">Premium multi-layer packing materials to ensure your fragile items stay protected.</p>
                 <Link to="/services/packing-unpacking" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
-                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Package size={16}/></span>
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Package size={16} /></span>
                 </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1772&q=80" alt="Courier Cargo" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Courier & Cargo</h3>
+                <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1772&q=80" alt="Courier Cargo" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Courier & Cargo</h3>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between bg-white">
                 <p className="text-gray-600 mb-6">Fast, reliable, and secure cargo and courier delivery network nationwide.</p>
                 <Link to="/services/courier-cargo" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
-                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16}/></span>
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><Truck size={16} /></span>
                 </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group overflow-hidden border border-gray-100 relative top-0 hover:-top-2">
               <div className="h-56 overflow-hidden relative">
-                 <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1770&q=80" alt="Goods Insurance" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                 <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Goods Insurance</h3>
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1770&q=80" alt="Goods Insurance" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white z-10">Goods Insurance</h3>
               </div>
               <div className="p-6 flex-grow flex flex-col justify-between bg-white">
                 <p className="text-gray-600 mb-6">Comprehensive transit insurance policies to secure against any unforeseen damages.</p>
                 <Link to="/services/goods-insurance" className="flex items-center gap-2 text-[#4295D1] font-bold hover:text-blue-800 transition uppercase tracking-wide text-sm">
-                  Get Started <span className="bg-blue-50 p-1 rounded-full"><ShieldCheck size={16}/></span>
+                  Get Started <span className="bg-blue-50 p-1 rounded-full"><ShieldCheck size={16} /></span>
                 </Link>
               </div>
             </div>
@@ -250,7 +252,7 @@ const Home = () => {
               <h3 className="text-xl font-bold text-secondary mb-2">Share Details</h3>
               <p className="text-gray-600 text-sm">Tell us when and where you want to move.</p>
             </div>
-            
+
             <div className="text-center relative">
               <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 border-4 border-accent relative z-10">
                 <span className="text-2xl font-bold text-primary">2</span>
@@ -303,7 +305,7 @@ const Home = () => {
                 </li>
               </ul>
             </div>
-            
+
             <div className="lg:w-1/2 w-full">
               <div className="bg-white rounded-xl p-8 shadow-lg">
                 <form className="space-y-4">
