@@ -30,7 +30,7 @@ const Home = () => {
               <Link to="/contact" className="bg-primary text-white px-8 py-3 rounded-md font-bold text-center hover:bg-red-700 transition shadow-lg text-lg">
                 Get a Free Quote
               </Link>
-              <a href="tel:7983386937" className="bg-white text-secondary px-8 py-3 rounded-md font-bold text-center hover:bg-gray-100 transition shadow-lg text-lg border-2 border-transparent">
+              <a href="tel:8272038697" className="bg-white text-secondary px-8 py-3 rounded-md font-bold text-center hover:bg-gray-100 transition shadow-lg text-lg border-2 border-transparent">
                 Call Us Now
               </a>
             </div>
@@ -288,8 +288,8 @@ const Home = () => {
             <p className="text-accent font-semibold text-xl">We move your goods from any place to your destination in India.</p>
           </div>
           <div className="flex gap-4">
-            <a href="tel:7983386937" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
-              <Phone size={20} /> 79833 86937
+            <a href="tel:8272038697" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
+              <Phone size={20} /> 8272038697
             </a>
           </div>
         </div>
