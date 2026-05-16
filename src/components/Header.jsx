@@ -7,20 +7,16 @@ const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    { title: "HOME SHIFTING SERVICES", path: "/services#home-shifting" },
-    { title: "OFFICE SHIFTING SERVICES", path: "/services#office-shifting" },
-    { title: "CAR TRANSPORTATION SERVICES", path: "/services#car-transportation" },
-    { title: "COURIER & CARGO SERVICES", path: "/services#courier-cargo" },
-    { title: "LUGGAGE DELIVERY", path: "/services#luggage-delivery" },
-    { title: "GOODS INSURANCE", path: "/services#goods-insurance" },
-    { title: "IBA APPROVED TRANSPORTERS", path: "/services#iba-approved" },
-    { title: "LOADING AND UNLOADING", path: "/services#loading-unloading" },
-    { title: "PACKING AND UNPACKING", path: "/services#packing-unpacking" },
-    { title: "BILL FOR CLAIM", path: "/services#bill-for-claim" },
-    { title: "HOUSEKEEPING", path: "/services#housekeeping" },
-    { title: "MECHANICAL ENGINEERING", path: "/services#mechanical-engineering" },
-    { title: "TRANSPORTATION", path: "/services#transportation" },
-    { title: "ALL INDIA SERVICES", path: "/services#all-india" }
+    { title: "HOME SHIFTING SERVICES", path: "/services/home-shifting" },
+    { title: "OFFICE SHIFTING SERVICES", path: "/services/office-shifting" },
+    { title: "CAR TRANSPORTATION SERVICES", path: "/services/car-transportation" },
+    { title: "COURIER & CARGO SERVICES", path: "/services/courier-cargo" },
+    { title: "LUGGAGE DELIVERY", path: "/services/luggage-delivery" },
+    { title: "GOODS INSURANCE", path: "/services/goods-insurance" },
+    { title: "LOADING AND UNLOADING", path: "/services/loading-unloading" },
+    { title: "PACKING AND UNPACKING", path: "/services/packing-unpacking" },
+    { title: "TRANSPORTATION", path: "/services/transportation" },
+    { title: "ALL INDIA SERVICES", path: "/services/all-india" }
   ];
 
   return (
