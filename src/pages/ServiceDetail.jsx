@@ -184,8 +184,8 @@ const ServiceDetail = () => {
               <h3 className="text-2xl font-bold text-secondary mb-4">Need this service?</h3>
               <p className="text-gray-600 mb-6">Contact our moving experts today to discuss your requirements and get a free customized quote.</p>
               <div className="flex flex-col gap-4">
-                <a href="tel:7983386937" className="bg-white border-2 border-primary text-primary px-4 py-3 rounded text-center font-bold hover:bg-primary hover:text-white transition">
-                  Call +91 79833 86937
+                <a href="tel:8272038697" className="bg-white border-2 border-primary text-primary px-4 py-3 rounded text-center font-bold hover:bg-primary hover:text-white transition">
+                  Call +91 82720 38697
                 </a>
                 <Link to="/contact" className="bg-secondary text-white px-4 py-3 rounded text-center font-bold hover:bg-gray-800 transition">
                   Request Free Quote
