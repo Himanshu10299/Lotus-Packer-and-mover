@@ -26,7 +26,7 @@ const Header = () => {
       <div className="bg-primary text-white py-2 hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex space-x-6">
-            <span className="flex items-center gap-2"><PhoneIcon size={16} /> +91 79833 86937 / +91 82720 38697</span>
+            <span className="flex items-center gap-2"><PhoneIcon size={16} /> +91 79833 86937 / +91 92865 69006</span>
             <span className="flex items-center gap-2"><MailIcon size={16} /> info@lotuspackersandmovers.com</span>
           </div>
           <div className="flex items-center gap-2">
