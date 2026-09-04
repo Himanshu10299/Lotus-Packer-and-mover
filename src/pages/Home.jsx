@@ -355,7 +355,7 @@ const Home = () => {
           </div>
           <div className="flex gap-4">
             <a href="tel:7983386937" className="bg-primary hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg text-lg flex items-center gap-2 transition">
-              <Phone size={20} /> 7983386937 / 8272038697
+              <Phone size={20} /> 7983386937 / 9286569006
             </a>
           </div>
         </div>
